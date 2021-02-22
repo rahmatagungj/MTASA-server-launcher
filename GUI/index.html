@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Republic City Launcher</title>
+    <link rel="icon" type="image/png" href="./image/logo.png" />
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="./css/main.css" />
+    <link type="text/css" rel="stylesheet" href="./css/all.min.css" />
+    <link type="text/css" rel="stylesheet" href="./css/duDialog.min.css" />
+    <link type="text/css" rel="stylesheet" href="./css/hover-min.css" />
+    <script type="text/javascript" src="./eel.js"></script>
+    <script type="text/javascript" src="./js/FRAMEWORK/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/FRAMEWORK/vue.min.js"></script>
+    <script type="text/javascript" src="./js/api.js"></script>
+    <script
+      type="text/javascript"
+      src="./js/FRAMEWORK/duDialog.min.js"
+    ></script>
+    <script type="module" src="./js/UI/base.js"></script>
+    <script
+      type="text/javascript"
+      src="./js/FRAMEWORK/bootstrap.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container" id="app">
+      <r-title></r-title>
+      <div class="main-content">
+        <div class="players">{{ players_count }}</div>
+        <div class="voices" v-html="voice_status">{{ voice_status }}</div>
+      </div>
+      <hr class="struck" />
+      <div class="versions">{{ versions }}</div>
+      <div class="row paction">
+        <div class="col-8"></div>
+        <div class="col-4">
+          <div class="d-grid gap-2">
+            <button
+              type="button"
+              class="btn btn-outline-light"
+              @click="setting"
+            >
+              {{ button_setting }}
+            </button>
+            <button type="button" class="btn btn-outline-light" @click="play">
+              {{ button_connect }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

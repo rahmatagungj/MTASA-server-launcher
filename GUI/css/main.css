@@ -1,0 +1,71 @@
+body {
+  /* background-color: rgb(233, 233, 233); */
+  background-image: url(../image/bg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.logos {
+  max-width: 100px;
+  margin: 34px;
+  margin-left: 44px;
+  margin-right: -10px;
+}
+
+p.ptitle {
+  color: white;
+  font-weight: 700;
+  display: inline;
+  font-size: 40px;
+}
+
+p.sub-ptitle {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.pbody {
+  margin-top: 28px;
+}
+
+.row.paction {
+  bottom: 50px;
+  position: fixed;
+  right: 150px;
+}
+
+.btn-outline-light {
+  border-radius: 0px;
+  border: 2px solid rgb(87, 255, 241);
+  width: 150px;
+  height: 55px;
+}
+
+.main-content {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  padding: 23px;
+  border-radius: 5px;
+  max-width: 400px;
+  font-weight: 500;
+  color: white;
+}
+
+.players {
+  font-size: 45px;
+}
+
+.versions {
+  color: white;
+  max-width: 400px;
+  font-size: 12px;
+}
+
+hr.struck {
+  size: 2px;
+  max-width: 400px;
+  color: white;
+  height: 2px;
+}
