@@ -1,6 +1,14 @@
 function js_connect_to_server(status) {
-  console.log(status);
-  return "BERMAIN";
+  console.log(Notification.permission);
+
+  if (Notification.permission === "granted") {
+    alert ("You are connected to Republic City server.\n ~~HAPPY ROLEPLAY~~");
+    return "Bermain"
+  } else if (Notification.permission !== "denied") {
+    Notification.requestPermission().then (permission => {
+      console.log(permission);
+    });
+  }
 }
 
 function js_open_setting(status) {
