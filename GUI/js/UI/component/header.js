@@ -13,6 +13,7 @@ export default new Vue({
     voice_status: voice_status,
     version_check: false,
     versions: versions_status,
+    button_discord: "DISCORD",
     button_setting: "PENGATURAN",
     button_connect: "CONNECT",
     status: current_status,
@@ -27,6 +28,10 @@ export default new Vue({
     },
   },
   methods: {
+    discord: function () {
+      let result = js_connect_to_discord(this.status);
+      this.button_connect = result;
+    },
     setting: function () {
       this.status = "in setting";
       js_open_setting(this.status);
